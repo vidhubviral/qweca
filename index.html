@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Video</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #000000, #1a1a1a);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background: #f2f2f2;
+            border-radius: 20px;
+            padding: 30px;
+            width: 360px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        h2 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .main-btn {
+            margin-top: 12px;
+            display: block;
+            width: 100%;
+            padding: 14px;
+            border-radius: 12px;
+            border: none;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            cursor: pointer;
+            background: linear-gradient(to right, red, orange);
+            box-shadow: 0 5px 15px rgba(255,0,0,0.4);
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+
+    <h2>This Video Is Going Viral 😲</h2>
+    <p>Tap the button below to watch the full video</p>
+
+    <button class="main-btn" onclick="playVideo()">▶ PLAY VIDEO NOW</button>
+    <button class="main-btn" onclick="playAlt1()">🔥 WATCH FULL HD</button>
+    <button class="main-btn" onclick="playAlt2()">🚀 WATCH WITHOUT ADS</button>
+    <button class="main-btn" onclick="playAlt3()">🎬 OPEN VIDEO LINK</button>
+
+</div>
+
+<script>
+    function playVideo() {
+        alert("Main video");
+        // window.location.href = "https://link1.com";
+    }
+
+    function playAlt1() {
+        alert("HD video");
+        // window.location.href = "https://link2.com";
+    }
+
+    function playAlt2() {
+        alert("No Ads video");
+        // window.location.href = "https://link3.com";
+    }
+
+    function playAlt3() {
+        alert("Open link");
+        // window.location.href = "https://link4.com";
+    }
+</script>
+
+</body>
+</html>
